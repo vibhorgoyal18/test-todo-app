@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "username": "testuser",
+      "password": "Test@1234",
+      "name": "Alice Tester",
+      "email": "alice@test.com",
+      "role": "admin"
+    },
+    {
+      "id": "u2",
+      "username": "viewer",
+      "password": "View@5678",
+      "name": "Bob Viewer",
+      "email": "bob@test.com",
+      "role": "viewer"
+    }
+  ],
+  "todos": [
+    {
+      "id": "t1",
+      "userId": "u1",
+      "title": "Write Playwright tests",
+      "description": "Cover login, CRUD, and drag-drop scenarios",
+      "status": "in-progress",
+      "priority": "high",
+      "dueDate": "2025-03-01",
+      "tags": ["testing", "automation"]
+    },
+    {
+      "id": "t2",
+      "userId": "u1",
+      "title": "Set up CI pipeline",
+      "description": "GitHub Actions with Playwright",
+      "status": "todo",
+      "priority": "medium",
+      "dueDate": "2025-03-15",
+      "tags": ["devops"]
+    },
+    {
+      "id": "t3",
+      "userId": "u1",
+      "title": "Review PR",
+      "description": "Code review for feature branch",
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2025-02-20",
+      "tags": ["review"]
+    }
+  ]
+}
