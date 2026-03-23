@@ -49,6 +49,7 @@ export default function DashboardPage() {
           value={stats.total}
           icon={ListTodo}
           color="bg-blue-100 text-blue-600"
+          href="/todos"
         />
         <StatsCard
           testid="stat-completed"
@@ -56,6 +57,7 @@ export default function DashboardPage() {
           value={stats.completed}
           icon={CheckCircle2}
           color="bg-green-100 text-green-600"
+          href="/todos?status=done"
         />
         <StatsCard
           testid="stat-in-progress"
@@ -63,6 +65,7 @@ export default function DashboardPage() {
           value={stats.inProgress}
           icon={Clock}
           color="bg-yellow-100 text-yellow-600"
+          href="/todos?status=in-progress"
         />
         <StatsCard
           testid="stat-overdue"
@@ -70,6 +73,7 @@ export default function DashboardPage() {
           value={stats.overdue}
           icon={AlertCircle}
           color="bg-red-100 text-red-600"
+          href="/todos?status=overdue"
         />
       </div>
 

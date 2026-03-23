@@ -41,6 +41,7 @@ export default function TodoFilters({ filters, onChange }) {
           <SelectItem value="todo">Todo</SelectItem>
           <SelectItem value="in-progress">In Progress</SelectItem>
           <SelectItem value="done">Done</SelectItem>
+          <SelectItem value="overdue">Overdue</SelectItem>
         </Select>
       </div>
 
