@@ -9,7 +9,7 @@ function generateId() {
 
 function restoreSession() {
   try {
-    const raw = sessionStorage.getItem(SESSION_KEY)
+    const raw = localStorage.getItem(SESSION_KEY)
     return raw ? JSON.parse(raw) : null
   } catch {
     return null
@@ -25,13 +25,13 @@ const useAppStore = create((set, get) => ({
       (u) => u.username === username && u.password === password
     )
     if (!user) return false
-    sessionStorage.setItem(SESSION_KEY, JSON.stringify(user))
+    localStorage.setItem(SESSION_KEY, JSON.stringify(user))
     set({ currentUser: user })
     return true
   },
 
   logout: () => {
-    sessionStorage.removeItem(SESSION_KEY)
+    localStorage.removeItem(SESSION_KEY)
     set({ currentUser: null })
   },
 
